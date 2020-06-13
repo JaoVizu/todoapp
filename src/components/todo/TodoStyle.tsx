@@ -58,14 +58,12 @@ const styles = StyleSheet.create({
     color: '#222'
   },
   taskButton : {
-    backgroundColor: '#A6A6A6',
     padding: 10,
-    borderRadius: 10
   },
   taskIcon: {
     fontSize: 24,
     color: '#222',
-    fontWeight: "bold"
+    fontWeight:  "bold"
   }
 })
 
