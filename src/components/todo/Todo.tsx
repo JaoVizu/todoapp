@@ -2,6 +2,8 @@ import React, {useState, useEffect, useRef} from 'react'
 import {View, Text, StyleSheet, TextInput, TouchableOpacity, ToastAndroid, NativeSyntheticEvent, TextInputChangeEventData, ScrollView, Button} from 'react-native'
 import { Feather as Icon} from '@expo/vector-icons'
 
+import styles from './TodoStyle'
+
 const Todo = () => {
 
   const [newTask, setNewTask] = useState<string>('')
@@ -32,7 +34,7 @@ const Todo = () => {
     <View style={styles.container}>
       <Text style={styles.textTitle}>Todo List</Text>
 
-      <View>
+      <View style={styles.formContainer}>
         <TextInput
           style={styles.inputStyle}
           onChange={handleInputChange}
@@ -43,7 +45,7 @@ const Todo = () => {
           style={styles.button}
           onPress={addTask}  
         >
-          <Text style={styles.buttonText}>OK!</Text>
+          <Text style={styles.buttonText}><Icon style={styles.taskIcon} name="corner-right-down"/></Text>
         </TouchableOpacity> 
       </View>
       
@@ -61,68 +63,6 @@ const Todo = () => {
   )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 32,
-    backgroundColor: '#f2f2f2'
-  },
-  textTitle : {
-    fontSize: 36,
-    fontWeight: 'bold',
-    textAlign: "center",
-    marginBottom: 20
-  },
-  inputStyle : {
-    height: 40,
-    borderColor: '#B335F7',
-    borderWidth: 2,
-    fontSize: 20,
-    padding: 5,
-    borderRadius: 5,
-  },
-  button : {
-    backgroundColor: '#691F91',
-    padding: 10,
-    marginTop: 10,
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderRadius: 10,
-    height: 50
-  },
-  buttonText : {
-    color : '#f2f2f2',
-    fontSize: 20,
-    fontWeight: "bold"
-  },
-  tasksContainer : {
-    marginTop: 20
-  },
-  task : {
-    backgroundColor: "#B335F7",
-    borderRadius: 8,
-    flex: 1,
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-    padding: 16,
-    marginBottom: 10
-  },
-  taskText : {
-    fontSize: 16,
-    color: '#f2f2f2',
-    textTransform: 'uppercase'
-  },
-  taskButton : {
-    backgroundColor: '#691F91',
-    padding: 10,
-    borderRadius: 10
-  },
-  taskIcon: {
-    fontSize: 24,
-    color: '#f2f2f2',
-    fontWeight: "bold"
-  }
-})
+
 
 export default Todo
