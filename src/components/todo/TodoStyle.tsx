@@ -5,13 +5,14 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 32,
-    backgroundColor: '#f2f2f2'
+    backgroundColor: '#f4f4f4'
   },
   textTitle : {
     fontSize: 36,
     fontWeight: 'bold',
     textAlign: "center",
-    marginBottom: 20
+    marginBottom: 20,
+    color: "#933CCC"
   },
   formContainer : {
     flexDirection: "row",
@@ -21,14 +22,14 @@ const styles = StyleSheet.create({
   inputStyle : {
     flexBasis: 230,
     height: 40,
-    borderColor: '#A6A6A6',
+    borderColor: '#B84BFF',
     borderWidth: 2,
     fontSize: 20,
     padding: 5,
     borderRadius: 5,
   },
   button : {
-    backgroundColor: '#A6A6A6',
+    backgroundColor: '#B84BFF',
     padding: 8,
     alignItems: 'center',
     justifyContent: 'center',
@@ -44,25 +45,26 @@ const styles = StyleSheet.create({
     marginTop: 20
   },
   task : {
-    backgroundColor: "#D9D9D9",
+    // backgroundColor: "#D9D9D9",
+    backgroundColor: '#933CCC',
     flex: 1,
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
     padding: 10,
     borderBottomWidth: 1,
-    borderBottomColor: '#A6A6A6'
+    borderBottomColor: '#D697FF'
   },
   taskText : {
     fontSize: 18,
-    color: '#222'
+    color: '#f2f2f2'
   },
   taskButton : {
     padding: 10,
   },
   taskIcon: {
     fontSize: 24,
-    color: '#222',
+    color: '#f2f2f2',
     fontWeight:  "bold"
   }
 })

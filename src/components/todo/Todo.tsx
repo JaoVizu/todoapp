@@ -1,5 +1,5 @@
-import React, {useState, useEffect, useRef} from 'react'
-import {View, Text, StyleSheet, TextInput, TouchableOpacity, ToastAndroid, NativeSyntheticEvent, TextInputChangeEventData, ScrollView, Button} from 'react-native'
+import React, {useState} from 'react'
+import {View, Text, TextInput, TouchableOpacity, ToastAndroid, NativeSyntheticEvent, TextInputChangeEventData, ScrollView} from 'react-native'
 import { Feather as Icon} from '@expo/vector-icons'
 
 import styles from './TodoStyle'
