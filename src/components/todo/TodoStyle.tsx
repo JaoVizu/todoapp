@@ -45,9 +45,9 @@ const styles = StyleSheet.create({
     marginTop: 20
   },
   task : {
-    // backgroundColor: "#D9D9D9",
     backgroundColor: '#933CCC',
     flex: 1,
+    flexWrap: "wrap",
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
